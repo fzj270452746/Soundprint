@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074E6628D349B62D95F35754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97EA3F813EF653FA6072A96 /* Foundation.framework */; };
+		13C692E453F3E6098F664005 /* SoundprintLiveActivity.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D6721B0F782974935CA4110 /* SoundprintLiveActivity.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D77289046A76D5E107D38DE /* Pods_Soundprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADB3461FD402F43DABAD4EA /* Pods_Soundprint.framework */; };
+		7C7B58AB8AAF18BA1ED3E55C /* RecordingLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71753ADAB1B73C527981B4CB /* RecordingLiveActivityWidget.swift */; };
+		C26B41AEB1A25692838D5830 /* RecordingActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B284C5FCDC089BFFB2FB04 /* RecordingActivityAttributes.swift */; };
+		DA416B635C795BF346FB0B13 /* RecordingActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B284C5FCDC089BFFB2FB04 /* RecordingActivityAttributes.swift */; };
+		F88A8B277CD8CA72D0C5CA1B /* Pods_SoundprintLiveActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC3DD87D86CBFACFCB65CE1 /* Pods_SoundprintLiveActivity.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB6C7B8C9FE2EA301EFA0A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 287C352C308A2E3100E327F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97B95B7165DC9E2C308FB86C;
+			remoteInfo = SoundprintLiveActivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67979D87C9D6AE649D23C3F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13C692E453F3E6098F664005 /* SoundprintLiveActivity.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D6721B0F782974935CA4110 /* SoundprintLiveActivity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoundprintLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		287C3534308A2E3100E327F8 /* Soundprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADB3461FD402F43DABAD4EA /* Pods_Soundprint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundprint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53061D7937A53D7A8AC4E042 /* Pods-Soundprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundprint.release.xcconfig"; path = "Target Support Files/Pods-Soundprint/Pods-Soundprint.release.xcconfig"; sourceTree = "<group>"; };
+		5C5237438E17C2BC653225DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71753ADAB1B73C527981B4CB /* RecordingLiveActivityWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecordingLiveActivityWidget.swift; sourceTree = "<group>"; };
+		97B284C5FCDC089BFFB2FB04 /* RecordingActivityAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecordingActivityAttributes.swift; sourceTree = "<group>"; };
+		A630EB93419759CFFE593AB5 /* Pods-Soundprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundprint.debug.xcconfig"; path = "Target Support Files/Pods-Soundprint/Pods-Soundprint.debug.xcconfig"; sourceTree = "<group>"; };
+		AB832BAC1470F629571F5C70 /* Pods-SoundprintLiveActivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundprintLiveActivity.release.xcconfig"; path = "Target Support Files/Pods-SoundprintLiveActivity/Pods-SoundprintLiveActivity.release.xcconfig"; sourceTree = "<group>"; };
+		B97EA3F813EF653FA6072A96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBC3DD87D86CBFACFCB65CE1 /* Pods_SoundprintLiveActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundprintLiveActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F411B8D59CCEF17EEF8D1668 /* Pods-SoundprintLiveActivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundprintLiveActivity.debug.xcconfig"; path = "Target Support Files/Pods-SoundprintLiveActivity/Pods-SoundprintLiveActivity.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		287C3546308A2E3300E327F8 /* Exceptions for "Soundprint" folder in "Soundprint" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 287C3533308A2E3100E327F8 /* Soundprint */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		287C3536308A2E3100E327F8 /* Soundprint */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				287C3546308A2E3300E327F8 /* Exceptions for "Soundprint" folder in "Soundprint" target */,
+			);
+			path = Soundprint;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		287C3531308A2E3100E327F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D77289046A76D5E107D38DE /* Pods_Soundprint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D57DA0A4B6319BC7010F891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074E6628D349B62D95F35754 /* Foundation.framework in Frameworks */,
+				F88A8B277CD8CA72D0C5CA1B /* Pods_SoundprintLiveActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06EFC89DA5357FB943695219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B835ED0F0872A11E407C05A /* iOS */,
+				4ADB3461FD402F43DABAD4EA /* Pods_Soundprint.framework */,
+				DBC3DD87D86CBFACFCB65CE1 /* Pods_SoundprintLiveActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287C352B308A2E3100E327F8 = {
+			isa = PBXGroup;
+			children = (
+				287C3536308A2E3100E327F8 /* Soundprint */,
+				287C3535308A2E3100E327F8 /* Products */,
+				06EFC89DA5357FB943695219 /* Frameworks */,
+				F230C0C792B1BC6099AD69CC /* Shared */,
+				9C62EE129A643958AF710B23 /* SoundprintLiveActivity */,
+				34A427A3CD9558338545B5C1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		287C3535308A2E3100E327F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				287C3534308A2E3100E327F8 /* Soundprint.app */,
+				1D6721B0F782974935CA4110 /* SoundprintLiveActivity.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34A427A3CD9558338545B5C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A630EB93419759CFFE593AB5 /* Pods-Soundprint.debug.xcconfig */,
+				53061D7937A53D7A8AC4E042 /* Pods-Soundprint.release.xcconfig */,
+				AB832BAC1470F629571F5C70 /* Pods-SoundprintLiveActivity.release.xcconfig */,
+				F411B8D59CCEF17EEF8D1668 /* Pods-SoundprintLiveActivity.debug.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B835ED0F0872A11E407C05A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B97EA3F813EF653FA6072A96 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9C62EE129A643958AF710B23 /* SoundprintLiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				71753ADAB1B73C527981B4CB /* RecordingLiveActivityWidget.swift */,
+				5C5237438E17C2BC653225DA /* Info.plist */,
+			);
+			path = SoundprintLiveActivity;
+			sourceTree = "<group>";
+		};
+		F230C0C792B1BC6099AD69CC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				97B284C5FCDC089BFFB2FB04 /* RecordingActivityAttributes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		287C3533308A2E3100E327F8 /* Soundprint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287C3547308A2E3300E327F8 /* Build configuration list for PBXNativeTarget "Soundprint" */;
+			buildPhases = (
+				613154910EDF4E364E0CC53D /* [CP] Check Pods Manifest.lock */,
+				287C3530308A2E3100E327F8 /* Sources */,
+				287C3531308A2E3100E327F8 /* Frameworks */,
+				287C3532308A2E3100E327F8 /* Resources */,
+				67979D87C9D6AE649D23C3F4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89BF981D14F3641CAB9B6BB3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				287C3536308A2E3100E327F8 /* Soundprint */,
+			);
+			name = Soundprint;
+			productName = Soundprint;
+			productReference = 287C3534308A2E3100E327F8 /* Soundprint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97B95B7165DC9E2C308FB86C /* SoundprintLiveActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD060F506E6ED94A31F78255 /* Build configuration list for PBXNativeTarget "SoundprintLiveActivity" */;
+			buildPhases = (
+				ACA095B3AA3720D05FCA21D0 /* [CP] Check Pods Manifest.lock */,
+				BDC619AB1650667118B03E7C /* Sources */,
+				5D57DA0A4B6319BC7010F891 /* Frameworks */,
+				131F3239A4E63CEDC5E4A646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundprintLiveActivity;
+			productName = SoundprintLiveActivity;
+			productReference = 1D6721B0F782974935CA4110 /* SoundprintLiveActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		287C352C308A2E3100E327F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					287C3533308A2E3100E327F8 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 287C352F308A2E3100E327F8 /* Build configuration list for PBXProject "Soundprint" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 287C352B308A2E3100E327F8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 287C3535308A2E3100E327F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				287C3533308A2E3100E327F8 /* Soundprint */,
+				97B95B7165DC9E2C308FB86C /* SoundprintLiveActivity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		131F3239A4E63CEDC5E4A646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		287C3532308A2E3100E327F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		613154910EDF4E364E0CC53D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Soundprint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACA095B3AA3720D05FCA21D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundprintLiveActivity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		287C3530308A2E3100E327F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26B41AEB1A25692838D5830 /* RecordingActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC619AB1650667118B03E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA416B635C795BF346FB0B13 /* RecordingActivityAttributes.swift in Sources */,
+				7C7B58AB8AAF18BA1ED3E55C /* RecordingLiveActivityWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89BF981D14F3641CAB9B6BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SoundprintLiveActivity;
+			target = 97B95B7165DC9E2C308FB86C /* SoundprintLiveActivity */;
+			targetProxy = EB6C7B8C9FE2EA301EFA0A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		287C3548308A2E3300E327F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A630EB93419759CFFE593AB5 /* Pods-Soundprint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Soundprint/Soundprint.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Soundprint/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Soundprint;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses the camera to photograph a place and attach the photo to a recording. Photos are stored only on this device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to optionally attach your current location to recordings and places. Location data is stored only on this device and is never sent automatically.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uses the microphone to record the sound of a place. Recordings are stored only on this device.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdp.Soundprint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		287C3549308A2E3300E327F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53061D7937A53D7A8AC4E042 /* Pods-Soundprint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Soundprint/Soundprint.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Soundprint/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Soundprint;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uses the camera to photograph a place and attach the photo to a recording. Photos are stored only on this device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to optionally attach your current location to recordings and places. Location data is stored only on this device and is never sent automatically.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uses the microphone to record the sound of a place. Recordings are stored only on this device.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdp.Soundprint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		287C354A308A2E3300E327F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		287C354B308A2E3300E327F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92A2CDE0A1FF1ABCFB73F46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB832BAC1470F629571F5C70 /* Pods-SoundprintLiveActivity.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundprintLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Soundprint;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdp.Soundprint.LiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB8299EE7B382CDA72D083EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F411B8D59CCEF17EEF8D1668 /* Pods-SoundprintLiveActivity.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundprintLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Soundprint;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdp.Soundprint.LiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		287C352F308A2E3100E327F8 /* Build configuration list for PBXProject "Soundprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287C354A308A2E3300E327F8 /* Debug */,
+				287C354B308A2E3300E327F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		287C3547308A2E3300E327F8 /* Build configuration list for PBXNativeTarget "Soundprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287C3548308A2E3300E327F8 /* Debug */,
+				287C3549308A2E3300E327F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD060F506E6ED94A31F78255 /* Build configuration list for PBXNativeTarget "SoundprintLiveActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2CDE0A1FF1ABCFB73F46A /* Release */,
+				FB8299EE7B382CDA72D083EE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 287C352C308A2E3100E327F8 /* Project object */;
+}
